@@ -23,7 +23,9 @@ class Product:
   
 
   def make_purchase(self, quantity):
-      pass
+      price = self.get_price()
+      print('Total price charged: ', price)
+      self.amount -= quantity
 
 # create product object
 # make purchases against different product quantities (make sure to run each test case)
